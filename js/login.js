@@ -34,7 +34,7 @@ function login(e) {
 
     if (user) {
         localStorage.setItem('loggedInUser', JSON.stringify(user));
-          window.location.href = 'welcome.html';
+          window.location.href = 'https://mostafasamirkamel.github.io/loginsystem/welcome.html';
         clearLogin();
     } else {
         passSpan.textContent = "Invalid email or password ";
