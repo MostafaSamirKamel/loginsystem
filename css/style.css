@@ -1,0 +1,169 @@
+/* ===== Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url('../photo.avif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+}
+
+/* ===== Login Box ===== */
+.login-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 40px;
+    width: 380px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+}
+
+/* ===== Titles ===== */
+.login-box h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.login-box p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* ===== Inputs ===== */
+.input-group {
+
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px 10px 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Links ===== */
+.forgot {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+    opacity: 1;
+    color: black;
+}
+
+/* ===== Button ===== */
+.login-btn {
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+
+/* ===== Signup ===== */
+.signup {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.signup a:hover {
+    color: #000;
+    font-weight: 1000;
+}
+
+/* ===== Validation ===== */
+.is-valid {
+    border: 2px solid #28a745 !important;
+}
+
+.is-invalid {
+    border: 2px solid #dc3545 !important;
+}
+
+.input-group span {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  padding-left: 2px;
+  color: #dc3545; 
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

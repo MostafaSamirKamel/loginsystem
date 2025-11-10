@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <meta name="author" content="eng_mostafasamir" />
+    <meta name="description" content="Modern Register Page with smooth UI/UX" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap + Icons -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="login-container">
+      <div class="login-box shadow-lg">
+        <h1>Create Account</h1>
+        <form novalidate>
+          <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input
+              class="rounded-2"
+              type="text"
+              id="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+            <span></span>
+          </div>
+
+          <div class="input-group">
+            <label for="register-username">Username</label>
+            <input
+              class="rounded-2"
+              type="text"
+              id="register-username"
+              placeholder="Enter your username"
+              required
+            />
+            <span></span>
+          </div>
+
+          <div class="input-group">
+            <label for="register-email">Email</label>
+            <input
+              class="rounded-2"
+              type="email"
+              id="register-email"
+              placeholder="Enter your email"
+              required
+            />
+            <span></span>
+          </div>
+
+          <div class="input-group">
+            <label for="register-password">Password</label>
+            <input
+              class="rounded-2"
+              type="password"
+              id="register-password"
+              placeholder="Create a password"
+              required
+            />
+            <span></span>
+          </div>
+
+          <div class="input-group">
+            <label for="register-confirm-password">Confirm Password</label>
+            <input
+              class="rounded-2"
+              type="password"
+              id="register-confirm-password"
+              placeholder="Re-enter your password"
+              required
+            />
+            <span></span>
+          </div>
+
+          <button
+            type="button"
+            class="login-btn btn btn-outline-dark"
+            id="RegisterBtn"
+          >
+            Register
+          </button>
+
+          <p class="signup">
+            Already have an account? <a href="./index.html">Login here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/register.js"></script>
+  </body>
+</html>

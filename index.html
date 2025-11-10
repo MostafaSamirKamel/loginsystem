@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="login-container">
+      <div class="login-box">
+        <h1>Welcome!</h1>
+        <p>Please sign in to continue</p>
+
+        <form>
+          <div class="input-group">
+            <label for="login-email">Email</label>
+            <input
+              class="rounded-2"
+              type="email"
+              id="login-email"
+              placeholder="Enter your email"
+              required
+            />
+            <span></span>
+          </div>
+
+          <div class="input-group">
+            <label for="login-password">Password</label>
+
+            <input
+              class="rounded-2"
+              type="password"
+              id="login-password"
+              placeholder="Enter your password"
+              required
+            />
+            <span></span>
+          </div>
+
+          <a href="./NewPass.html" class="forgot">Forgot password?</a>
+
+          <button
+            type="button"
+            id="loginBtn"
+            class="login-btn btn btn-outline-dark"
+          >
+            Login
+          </button>
+
+          <p class="signup">
+            Don’t have an account? <a href="./register.html">Create one</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

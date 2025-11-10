@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="login-container">
+      <div class="login-box">
+        <h1>Reset Your Password</h1>
+
+        <form>
+          <div class="input-group">
+            <label for="new-username">Username</label>
+            <input
+              class="rounded-2"
+              type="text"
+              id="new-username"
+              placeholder="Enter your username"
+              required
+            />
+            <span></span>
+          </div>
+
+          <div class="input-group">
+            <label for="new-email">Email Address</label>
+            <input
+              class="rounded-2"
+              type="email"
+              id="new-email"
+              placeholder="Enter your email"
+              required
+            />
+            <span></span>
+          </div>
+
+          <button
+            type="button"
+            id="resetBtn"
+            class="login-btn btn btn-outline-dark my-2"
+          >
+            Reset Password
+          </button>
+
+          <div class="input-group">
+            <label for="new-password">New Password</label>
+
+            <input
+              class="rounded-2"
+              type="password"
+              id="new-password"
+              placeholder="Enter new password"
+              required
+            />
+            <span></span>
+          </div>
+
+          <div class="input-group">
+            <label for="confirm-new-password">Confirm Password</label>
+            <input
+              class="rounded-2"
+              type="password"
+              id="confirm-new-password"
+              placeholder="Re-enter new password"
+              required
+            />
+            <span></span>
+          </div>
+
+          <button
+            type="button"
+            id="saveBtn"
+            class="login-btn btn btn-outline-dark my-2"
+          >
+            Save New Password
+          </button>
+
+          <p class="signup">Back to <a href="./index.html">Login</a></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/NewPass.js"></script>
+  </body>
+</html>
